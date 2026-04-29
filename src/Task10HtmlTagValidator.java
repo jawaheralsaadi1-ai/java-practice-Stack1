@@ -16,4 +16,21 @@ public class Task10HtmlTagValidator {
                 "<div><ul><li>Item</li></ul>"                      // Unclosed tags
         };
 
-}}
+// Loop through each test case
+        for (String html : testCases) { //Using For Each Loop
+            System.out.println("Testing HTML: " + (html.isEmpty() ? "[Empty]" : html));
+
+            // Call the validation method
+            boolean isValid = validateHtmlTags(html);
+
+            System.out.println("Status: " + (isValid ? "Valid" : "Invalid"));
+            System.out.println("-----------------------------------");
+        }
+    }
+
+    // Define  validateHtmlTags class and test 8 cases
+    public static boolean validateHtmlTags(String html) {
+        // For now, we just return true to make sure the method works
+        return true;
+    }
+}
